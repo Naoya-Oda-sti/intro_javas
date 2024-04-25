@@ -4,9 +4,9 @@ h1{
     margin: 0;
 }
 div.content{
-    background-color: #fcc;
     width: 600px;
     margin: 10px auto;
+    border: 1px solid #d1d1d1;
 }
 p{
     font-size: 14px;
