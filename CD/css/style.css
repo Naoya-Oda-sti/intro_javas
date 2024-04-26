@@ -12,7 +12,8 @@ header{
     color: #fff;
 }
 
-h1{
+/* header内のh1だけに適用 */
+header h1{
     margin: 0;
     font-size: 24px;
     font-weight: normal;
@@ -23,4 +24,9 @@ h1{
     width: 800px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.description img{
+    float: left;
+    margin: 0 10px 10px 0;
 }
