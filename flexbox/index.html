@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexible Box</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+        }
+        .container{
+            border: 1px solid red;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="height: 200px;">box1</div>
+        <div class="box">box</div>
+        <div class="box" style="height: 50px;">box</div>
+    </div>
+</body>
+</html>
