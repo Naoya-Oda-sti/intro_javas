@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div>
         <p>サイコロ： <span id="output">?</span></p>
@@ -18,10 +20,11 @@
         //     document.getElementById("output").textContent = dice;
         // }
         document.getElementById("do_dice").addEventListener
-        ("click",()=>{
-            const dice = Math.floor(Math.random() * 6) + 1;
-            document.getElementById("output").textContent = dice;
-        });
+            ("click", () => {
+                const dice = Math.floor(Math.random() * 6) + 1;
+                document.getElementById("output").textContent = dice;
+            });
     </script>
 </body>
+
 </html>
