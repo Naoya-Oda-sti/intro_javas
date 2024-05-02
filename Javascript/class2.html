@@ -1,0 +1,30 @@
+<script>
+    class Item {
+        name = "";
+        #stock = 0;
+
+        get stock() {
+            console.log("getter is active")
+            return this.#stock;
+        }
+
+        set stock(value) {
+            console.log("setter is active")
+            this.#stock = value;
+        }
+
+        buy(count) {
+            if (this.#stock > count) {
+                this.#stock -= count;
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    }
+
+    let peach = new Item()
+    peach.stock = -100;
+    console.log(peach.stock);
+</script>

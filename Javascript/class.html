@@ -1,0 +1,23 @@
+<script>
+    class Item {
+        name = "";
+        stock = 0;
+
+        buy(count) {
+            if (this.stock > count) {
+                this.stock -= count;
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    }
+
+    let peach = new Item();
+    peach.name = "peach"
+    peach.stock = 5;
+    console.log(peach.stock);
+    peach.buy(6);
+    console.log(peach.stock);
+</script>

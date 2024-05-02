@@ -1,0 +1,18 @@
+<script>
+    class Item {
+        name;
+        stock;
+    }
+
+    // クラス継承、例外的に付与したい事項の記述、補足
+    class Food extends Item {
+        limit_date;
+    }
+
+    let peach = new Food();
+    peach.limit_date = 5;
+    peach.name = "peach";
+    console.log(peach.name);
+    console.log(peach.limit_date);
+    let pen = new Item();
+</script>

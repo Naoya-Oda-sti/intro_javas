@@ -1,0 +1,17 @@
+<script>
+    class Item {
+        name;
+        stock;
+
+        // new Item(xx,xx)でパラメータを指定可能になる
+        constructor(name, stock = 0) {
+            this.name = name;
+            this.stock = stock;
+        }
+    }
+
+    let peach = new Item("peach", 5);
+    console.log(peach.name);
+    let banana = new Item("banana");
+    console.log(banana.stock);
+</script>
