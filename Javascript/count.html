@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字カウンター</title>
+</head>
+
+
+<body>
+    <dl>
+        <p>
+            <font size="6"><span id="answer">?</span>文字</font>
+        </p>
+        <dd>
+            <textarea name="message" cols="150" rows="25" style="font-size: 24px"></textarea>
+        </dd>
+    </dl>
+
+    <script>
+        window.setInterval(count, 1500);
+        function count() {
+            const message = document.querySelector('textarea[name="message"]').value;
+            document.getElementById("answer").textContent = message.length;
+        }
+
+    </script>
+</body>
+
+</html>
