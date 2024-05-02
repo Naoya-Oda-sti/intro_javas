@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const items = ["いちご", "りんご", "ばなな"];
+        items.push("みかん");
+        items.unshift("ぶどう");
+        // ０番目を空文字に
+        items[0] = "";
+        // 最初の要素を削除
+        items.shift();
+        // 最後の要素を削除
+        items.pop();
+        console.table(items);
+    </script>
+</body>
+
+</html>
