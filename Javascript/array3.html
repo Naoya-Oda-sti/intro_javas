@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const area = {
+            "hokkaido": ["北海道"],
+            "tohoku": ["青森", "岩手"],
+            "chubu": ["石川"],
+        }
+        console.table(area);
+        for (areaname in area) {
+            document.write(areaname + "<br>");
+            for (prefname of area[areaname]) {
+                document.write(" - " + prefname + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>
